@@ -85,23 +85,6 @@
                 });
             });
         }
-
-        let dialog = document.getElementById('confirmation-dialog');
-        let result = document.getElementById('result');
-
-        document.getElementById('delete').addEventListener('click', function() {
-            dialog.showModal();
-        });
-
-        document.getElementById('cancel-delete').addEventListener('click', function() {
-            dialog.close();
-            result.textContent = 'Canceled';
-        });
-
-        document.getElementById('confirm-delete').addEventListener('click', function() {
-            dialog.close();
-            result.textContent = 'Deleted';
-        });
     </script>
 </head>
 <body>
@@ -144,5 +127,23 @@
         Created © 2020-2022 jiyuujin LAB. All Rights Reserved.
     </p>
 </footer>
+<script>
+    let dialog = document.getElementById('confirmation-dialog');
+    let result = document.getElementById('result');
+
+    document.getElementById('delete').addEventListener('click', function() {
+        dialog.showModal();
+    });
+
+    document.getElementById('cancel-delete').addEventListener('click', function() {
+        dialog.close();
+        result.textContent = 'Canceled';
+    });
+
+    document.getElementById('confirm-delete').addEventListener('click', function() {
+        dialog.close();
+        result.textContent = 'Deleted';
+    });
+</script>
 </body>
 </html>
